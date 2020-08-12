@@ -3,3 +3,7 @@ h1 {
   color: gray;
   text-shadow: black 2px 2px 2px;
 }
+
+#story {
+  display: none;
+}
