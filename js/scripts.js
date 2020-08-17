@@ -9,14 +9,17 @@ $(document).ready(function() {
     const nounInput = $("input#noun").val();
     const placeInput = $("input#place").val();
 
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".verb2").text(verbInput2);
-    $(".noun").text(nounInput);
-    $(".place").text(placeInput);
+    let inputArray = [person1Input, person2Input, animalInput, exclamationInput, verbInput, verbInput2, nounInput, placeInput];
+
+
+    $(".person1").text(inputArray[0]);
+    $(".person2").text(inputArray[1]);
+    $(".animal").text(inputArray[2]);
+    $(".exclamation").text(inputArray[3]);
+    $(".verb").text(inputArray[4]);
+    $(".verb2").text(inputArray[5]);
+    $(".noun").text(inputArray[6]);
+    $(".place").text(inputArray[7]);
 
     $("#story").show();
 
